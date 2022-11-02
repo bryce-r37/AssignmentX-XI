@@ -1,10 +1,18 @@
 package edu.baylor.ecs.si;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class Tester {
+
+	@Before
+	@DisplayName("Initialize logger")
+	@Test
+	void before() {
+		new Timer();
+	}
 	
 	@DisplayName("Test Timer pass")
 	@Test
